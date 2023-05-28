@@ -341,7 +341,7 @@
                                                 .replace(/\s+/g, "-")
                                                 .normalize("NFD")
                                                 .replace(/[\u0300-\u036f]/g, "")
-                                                .replace(/đ/g, "d")
+                                                .replace(/Ä‘/g, "d")
                                                 .replace(/([^\w]+|\s+)/g, "-")
                                                 .replace(/\-\-+/g, "-")
                                                 .replace(/(^-+|-+$)/, "")).replace(/\s+/g, "-"),
