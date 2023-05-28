@@ -106,7 +106,7 @@ function getPostImageType(e, t) {
     return e.match("i.ytimg.com") ? "is-video" : "is-image";
 }
 function getPostSummary(e, t, a, o, r, i) {
-    return e[t].content ? '<span class="entry-excerpt excerpt">' + $("<div>").html(e[t].content.$t).text().trim().substr(0, a) + "…</span>" : "";
+    return e[t].content ? '<span class="entry-excerpt excerpt">' + $("<div>").html(e[t].content.$t).text().trim().substr(0, a) + "â€¦</span>" : "";
 }
 function getPostComments(e, t, a, o) {
     var r = e[t].author[0].name.$t,
