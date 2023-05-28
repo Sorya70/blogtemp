@@ -4,12 +4,12 @@ $(function() {
       l = '',
       id = '',
       li = '',
-      m = 5, // Số bình luận hiển thị chính
+      m = 5, // Sá»‘ bÃ¬nh luáº­n hiá»ƒn thá»‹ chÃ­nh
       n = str.length,
       k = 0,
       p = 0
       $("#top-continue").removeClass("hidden");
-    // Gọi iframe khi click vào nút reply
+    // Gá»i iframe khi click vÃ o nÃºt reply
     $('.comment a.comment-reply').click(function(e) {
       top_li = $(this).parent().parent()
       l = $('#comment-editor').attr('src')
@@ -29,7 +29,7 @@ $(function() {
       
       top_li.find('.comment-replybox-single').first().append('<div class="cancel-reply"><button class="cancel-button" type="button">Cancel</button></div>');
       
-      //$('#' + li + '>.comment-replybox-single').append('<div class="calcel-reply"><button class="theme-button green" type="button">Hủy</button></div>')
+      //$('#' + li + '>.comment-replybox-single').append('<div class="calcel-reply"><button class="theme-button green" type="button">Há»§y</button></div>')
       //top_li.append('<div class="cancel-reply"><button class="cancel-button" type="button">Cancel</button></div>')
       
       $('.cancel-reply').click(function() {
@@ -41,7 +41,7 @@ $(function() {
       })
       $("#top-ce").attr("style","display:none")
     })
-    // Gọi iframe khi click vào nút Thêm nhận xét dưới cùng
+    // Gá»i iframe khi click vÃ o nÃºt ThÃªm nháº­n xÃ©t dÆ°á»›i cÃ¹ng
     $('#top-continue.continue>a.comment-reply').click(function(e) {
       e.preventDefault()
       $(this).parent().hide(),$("#top-ce").hide()
@@ -62,7 +62,7 @@ $(function() {
       })
     })
     
-    // Xử lý địa chỉ trình duyệt nếu có liên kết đến bình luận
+    // Xá»­ lÃ½ Ä‘á»‹a chá»‰ trÃ¬nh duyá»‡t náº¿u cÃ³ liÃªn káº¿t Ä‘áº¿n bÃ¬nh luáº­n
     if (url.indexOf('?showComment') != -1) {
       if (url.indexOf('#c') != -1) {
         var li = '#' + url.substring(url.indexOf('#c') + 1, url.length)
